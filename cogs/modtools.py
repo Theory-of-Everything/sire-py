@@ -4,6 +4,9 @@
 import discord
 from discord.ext import commands
 
+# TODO: Add in actual Moderation Tools and fix this section
+
+
 class Modtools(commands.Cog):
 
     def __init__(self, client):
