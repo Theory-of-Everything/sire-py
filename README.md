@@ -11,7 +11,7 @@ $ pip install -U -r requirements.txt
 `Linux Server:`
 Run the setup shell script:
 ```
-./setup.sh
+./setup.sh --help
 ```
 
 `Windows Server`
