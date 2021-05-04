@@ -17,4 +17,4 @@ class Fetch(commands.Cog):
     
 
 def setup(client):
-    client.add_cog(Utilities(client))
+    client.add_cog(Fetch(client))
