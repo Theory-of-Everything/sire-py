@@ -47,7 +47,10 @@ async def unloadModule(ctx, module):
 async def about(ctx):
     embed = discord.Embed(title="bot@theoryware", Description="Github Repo", color=discord.Color.green(), url="https://github.com/Theory-of-Everything/Aisaka-Bot")
     embed.add_field(name="About Me", value="I am a utility bot Desgined specifically for managing small tech-oriented comminutes.\n\n I am Currently in the very early stages of my development, \n but that doesn't mean I wont go far!", inline=False)
-    embed.add_field(name="Host Information", value=SERVER_INFO, inline=False)
+    if SERVER_INFO != None:
+        embed.add_field(name="Host Information", value=SERVER_INFO, inline=False)
+    else:
+        pass
     embed.add_field(name="Other info", value="made with discord.py", inline=False)
     embed.set_footer(text="Made by Theory_of_Everything#4163", icon_url="https://cdn.discordapp.com/avatars/356953662297473025/52bf1495980dfe60520a3a6a7cd9b4a7.png?size=128")
     await ctx.send(embed=embed)
