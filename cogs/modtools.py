@@ -16,19 +16,19 @@ class Modtools(commands.Cog):
     async def on_ready(self):
         print(f"Modtools Module is Online")
 
-    @commands.command(name="Modtest")
+    @commands.command(name="modtest")
     async def modtest(self, ctx, member):
         await ctx.send(member)
 
-    @commands.command(name="Kick", help="Kick a specified guild member.")
+    @commands.command(name="kick", help="Kick a specified guild member.")
     async def kick(self, ctx):
         await ctx.send("Kick Command")
     
-    @commands.command(name="Ban", help="Ban a specified guild mamber.")
+    @commands.command(name="ban", help="Ban a specified guild mamber.")
     async def ban(self, ctx):
         await ctx.send("Ban Command")
     
-    @commands.command(name="Mute", help="Mutes a guild member\nby assigning a muted role without \"Send Messages\" or \" Connnect to Voice Channel\" Permissons")
+    @commands.command(name="mute", help="Mutes a guild member\nby assigning a muted role without \"Send Messages\" or \" Connnect to Voice Channel\" Permissons")
     async def mute(self, ctx):
         await ctx.send("Mute Command") 
 
